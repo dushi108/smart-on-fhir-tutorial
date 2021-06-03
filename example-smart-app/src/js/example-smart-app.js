@@ -56,6 +56,7 @@ var alg = smart.patient.api.fetchAll({
 		  var alleryTable = ",table>";
 		  var allergyLen = allergies.length;
 		  for (var i=0; i<allergyLen;i++){
+			  /*var reaction*/
 			  alleryTable += "<tr><td>allergies[i].sunstance.text+"</td></tr>";
 		  }
 		  if allergyLen ===0){
