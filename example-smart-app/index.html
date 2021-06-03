@@ -68,7 +68,7 @@
 	  <h2>AllergyIntolerance</h2> 
 	  <div id='AllergyIntolerance'></div>
     </div>
-    <!-- Required JS files to enable this page to embed within an MPage -->
+   <!-- Required JS files to enable this page to embed within an MPage -->
     <!--
       Temporarily disable cerner-smart-embeddable-lib
       <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js'></script>
@@ -87,12 +87,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
       extractData().then(
-        <!--Display Patient Demographics and Observations if extractData was success
+        //Display Patient Demographics and Observations if extractData was success
         function(p) {
           drawVisualization(p);
         },
 
-        <!--Display 'Failed to call FHIR Service' if extractData failed
+        //Display 'Failed to call FHIR Service' if extractData failed
         function() {
           $('#loading').hide();
           $('#errors').html('<p> Failed to call FHIR Service </p>');
