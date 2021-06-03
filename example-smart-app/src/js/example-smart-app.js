@@ -53,7 +53,7 @@ var alg = smart.patient.api.fetchAll({
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
-		  var alleryTable = ",table>";
+		/*  var alleryTable = ",table>";
 		  var allergyLen = allergies.length;
 		  for (var i=0; i<allergyLen;i++){
 			  /*var reaction*/
@@ -62,7 +62,7 @@ var alg = smart.patient.api.fetchAll({
 		  if allergyLen ===0){
 				alleryTable += "<tr><td>No Allergies Found</td></tr>";
 		  }
-		  allergyTable += "</table>";
+		  allergyTable += "</table>";*/
 
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
@@ -106,8 +106,8 @@ var alg = smart.patient.api.fetchAll({
       systolicbp: {value: ''},
       diastolicbp: {value: ''},
       ldl: {value: ''},
-      hdl: {value: ''},
-	  allergies: {value: ''}
+      hdl: {value: ''}
+	 /* allergies: {value: ''}*/
     };
   }
 
@@ -151,7 +151,7 @@ var alg = smart.patient.api.fetchAll({
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
-	$('#AllergyIntolerance').html(p.allergies);
+	/*$('#AllergyIntolerance').html(p.allergies);*/
   };
 
 })(window);
