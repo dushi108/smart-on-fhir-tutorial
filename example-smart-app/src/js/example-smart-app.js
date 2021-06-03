@@ -95,6 +95,7 @@ var alg = smart.patient.api.fetchAll({
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+	  allergies: {value: ''}
     };
   }
 
@@ -138,6 +139,7 @@ var alg = smart.patient.api.fetchAll({
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
+	$('#AllergyIntolerance').html(p.allergies);
   };
 
 })(window);
